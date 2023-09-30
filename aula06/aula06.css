@@ -1,3 +1,9 @@
+:root {
+  --spacing-small: 4px;
+  --spacing-normal: 32px;
+  --spacing-huge: 64px;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -25,20 +31,14 @@ body {
   gap: 15px;
 }
 
-a {
-  color: white;
-}
-
-a:hover {
-  color: lightgray;
-  cursor: pointer;
-}
-
 .list {
   padding: 20px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  flex: 1;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .card {
@@ -47,7 +47,7 @@ a:hover {
   align-items: center;
   background-color: white;
   padding: 20px;
-  gap: 15px;
+  gap: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
@@ -59,4 +59,33 @@ a:hover {
 
 .avatar {
   margin-bottom: 5px;
+}
+
+h4 {
+  margin: 5px 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  color: white;
+  background-color: #333;
+  justify-content: space-evenly;
+}
+
+.footer-menu {
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  gap: 3px;
 }
